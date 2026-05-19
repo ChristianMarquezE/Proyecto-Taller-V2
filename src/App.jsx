@@ -5,42 +5,66 @@ const INITIAL_TIME = 900;
 const ROOMS = [
   {
     id: 1,
-    title: 'Sala 1 - El Código Perdido',
-    story:
-      'Despiertas en una habitación cerrada. En la pared aparece el mensaje: “La clave está en el número favorito de los programadores”.',
-    clue: 'Pista: Es un número muy conocido en informática.',
-    answer: '404',
+    title: 'Sala 1 - Los Cimientos Digitales',
+    story: 'Entras a una sala inestable donde la información flota sin orden. En una terminal parpadea un mensaje: "Soy la estructura principal de una página web. Sin mí, no hay etiquetas ni contenido ordenado. ¿Quién soy?"',
+    clue: 'Pista: HyperText Markup Language. Cuatro letras.',
+    answer: 'HTML',
     points: 100,
-    tool: '🖥️ Terminal Virtual: Error 404 = Not Found'
+    tool: '🏗️ Inspector de Elementos: Reconstruye el DOM'
   },
   {
     id: 2,
-    title: 'Sala 2 - El Servidor',
-    story:
-      'Encuentras un servidor bloqueado. Una nota dice: “La contraseña es el protocolo seguro utilizado por las páginas web”.',
-    clue: 'Pista: Comienza con H y termina con S.',
-    answer: 'https',
+    title: 'Sala 2 - El Lienzo en Blanco',
+    story: 'La sala tomó forma, pero todo es gris y monótono. Una voz robótica te desafía: "Le doy color, estilo y diseño visual a las pantallas del sistema. Transformo estructuras aburridas en interfaces modernas. ¿Quién soy?"',
+    clue: 'Pista: Sus siglas en inglés significan Hojas de Estilo en Cascada.',
+    answer: 'CSS',
     points: 150,
-    tool: '🌐 Navegador Virtual: HTTP + Seguridad = HTTPS'
+    tool: '🎨 Paleta de Estilos: Inyecta diseño al núcleo'
   },
   {
     id: 3,
-    title: 'Sala 3 - La Criptografía',
-    story: 'Hay un mensaje cifrado: “Uifsf jt b tfdsfu lfz”.',
-    clue: 'Pista: Cada letra fue desplazada +1 en el alfabeto.',
-    answer: 'there is a secret key',
+    title: 'Sala 3 - El Despertar del Sistema',
+    story: 'La habitación ahora tiene un diseño increíble, pero los controles están congelados. Un prompt espera tu comando: "Le doy vida, interactividad y dinamismo al navegador del cliente. Ejecuto funciones sin recargar la página. ¿Qué lenguaje soy?"',
+    clue: 'Pista: A menudo se abrevia simplemente con sus dos iniciales (JS).',
+    answer: 'JavaScript',
     points: 200,
-    tool: '🔐 Herramienta César: Desplaza las letras -1'
+    tool: '⚡ Motor V8: Activa los scripts de automatización'
   },
   {
     id: 4,
-    title: 'Sala Final - Escape',
-    story:
-      'La puerta final requiere una combinación secreta. Debes sumar los puntos obtenidos y escribir el total exacto.',
-    clue: 'Pista: Suma todos los puntos ganados.',
-    answer: '450',
+    title: 'Sala 4 - El Rastro Oculto',
+    story: 'El sistema intenta identificarte, pero pierde la memoria a cada paso. Un panel holográfico encriptado pregunta: "Viajo de forma oculta en las peticiones web. Almaceno datos de sesión del usuario en su propio navegador para que el servidor lo recuerde. ¿Qué soy?"',
+    clue: 'Pista: También es el nombre de una galleta horneada en inglés.',
+    answer: 'Cookie',
+    points: 250,
+    tool: '🍪 DevTools Application Tab: Intercepta los datos de sesión'
+  },
+  {
+    id: 5,
+    title: 'Sala 5 - El Puente de Datos',
+    story: 'Te topas con dos servidores aislados que no logran entenderse. El router central exige una palabra clave: "Soy el puente que permite que diferentes aplicaciones se comuniquen entre sí e intercambien datos. ¿Quién soy?"',
+    clue: 'Pista: Interfaz de Programación de Aplicaciones (siglas en inglés).',
+    answer: 'API',
+    points: 300,
+    tool: '🔌 Cliente REST (Postman): Conecta los sistemas'
+  },
+  {
+    id: 6,
+    title: 'Sala 6 - La Brecha de Seguridad',
+    story: '¡Alarmas rojas! Una entidad maliciosa intenta robar los registros. El firewall te pide que identifiques la amenaza: "Soy un ataque que aprovecha consultas mal protegidas para acceder o modificar bases de datos. Los desarrolladores me temen cuando no validan entradas. ¿Quién soy?"',
+    clue: 'Pista: Su nombre hace referencia a "inyectar" código en el lenguaje de bases de datos relacionales.',
+    answer: 'SQL Injection',
+    points: 400,
+    tool: '🛡️ PDO Prepare Statements: Sanitiza las entradas del usuario'
+  },
+  {
+    id: 7,
+    title: 'Sala Final - El Candado',
+    story: 'Estás a un paso de la libertad, pero la puerta de salida transmite la contraseña en texto plano. Debes asegurar la conexión: "Protejo la comunicación entre el navegador y el servidor usando cifrado seguro. Cuando estoy activo, aparece un candado en la barra del navegador".',
+    clue: 'Pista: Es el protocolo estándar, pero con una "S" extra al final por Seguridad.',
+    answer: 'HTTPS',
     points: 500,
-    tool: '🧮 Calculadora Integrada'
+    tool: '🔒 Certificado SSL/TLS: Cifra el canal de escape'
   }
 ];
 
